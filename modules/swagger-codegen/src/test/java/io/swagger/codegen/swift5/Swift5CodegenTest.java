@@ -66,6 +66,19 @@ public class Swift5CodegenTest {
     }
 
     @Test
+    public void testNameStarsWithSpecialCharacters() {
+        Assert.assertEquals(swiftCodegen.toEnumVarName("+createdat", null), "plusCreatedat");
+        Assert.assertEquals(swiftCodegen.toEnumVarName("-createdat", null), "minusCreatedat");
+    }
+    
+    @Test
+    public void testNameContainsSpecialSeparatorSymbols() {
+        Assert.assertEquals(swiftCodegen.toEnumVarName("random , comma", null), "randomComma");
+        Assert.assertEquals(swiftCodegen.toEnumVarName("random . dot", null), "randomDot");
+        Assert.assertEquals(swiftCodegen.toEnumVarName("random 'special' symbols", null), "randomSpecialSymbols");
+    }
+
+    @Test
     public void testStartingWithNumber() {
         Assert.assertEquals(swiftCodegen.toEnumVarName("123EntryName", null), "_123entryName");
         Assert.assertEquals(swiftCodegen.toEnumVarName("123Entry_name", null), "_123entryName");
