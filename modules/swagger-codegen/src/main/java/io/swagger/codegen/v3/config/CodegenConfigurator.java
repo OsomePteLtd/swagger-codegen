@@ -61,7 +61,7 @@ public class CodegenConfigurator implements Serializable {
     private boolean verbose;
     private boolean skipOverwrite;
     private boolean removeOperationIdPrefix;
-    private boolean skipInlineModelMatches;
+    private boolean skipInlineModelMatches = true;
     private String templateDir;
     private String templateVersion;
     private String auth;
