@@ -672,6 +672,8 @@ public class CodegenConfigurator implements Serializable {
         options.setResolve(true);
         options.setResolveFully(resolveFully);
         options.setFlatten(true);
+        options.setCamelCaseFlattenNaming(true);
+        options.setNameInlineResponsesBasedOnEndpoint(true);
         options.setFlattenComposedSchemas(flattenInlineSchema);
         options.setSkipMatches(this.skipInlineModelMatches);
         return options;

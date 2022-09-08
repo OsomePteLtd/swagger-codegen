@@ -26,7 +26,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                            <excludeArtifactIds>swagger-codegen-generators</excludeArtifactIds>
+                            <excludeArtifactIds>swagger-codegen-generators,swagger-parser,swagger-parser-core,swagger-parser-v3,swagger-parser-v2-converter</excludeArtifactIds>
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>org.eclipse.jetty</groupId>
@@ -176,7 +176,7 @@
                                 </goals>
                                 <configuration>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                                    <excludeArtifactIds>swagger-codegen-generators</excludeArtifactIds>
+                                    <excludeArtifactIds>swagger-codegen-generators,swagger-parser,swagger-parser-core,swagger-parser-v3,swagger-parser-v2-converter</excludeArtifactIds>
                                     <artifactItems>
                                         <artifactItem>
                                             <groupId>org.eclipse.jetty</groupId>

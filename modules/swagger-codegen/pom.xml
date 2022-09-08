@@ -65,7 +65,7 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <excludeArtifactIds>swagger-codegen-generators</excludeArtifactIds>
+                            <excludeArtifactIds>swagger-codegen-generators,swagger-parser,swagger-parser-core,swagger-parser-v3,swagger-parser-v2-converter</excludeArtifactIds>
                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
                         </configuration>
                     </execution>
