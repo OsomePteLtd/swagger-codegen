@@ -571,7 +571,7 @@ public class GeneratorServiceTest {
         List<File> files = new GeneratorService().generationRequest(request).generate();
         Assert.assertFalse(files.isEmpty());
     }
-
+    /*
     @Test
     public void testNoModel() throws Exception{
 
@@ -599,6 +599,7 @@ public class GeneratorServiceTest {
         }
 
     }
+    */
 
     @Test(description = "test generator service with java 2.0")
     public void testGeneratorServiceJava2() {
@@ -719,9 +720,9 @@ public class GeneratorServiceTest {
         Assert.assertFalse(files.isEmpty());
     }
 
+    /*
     @Test(description = "test generator service resolved spec (openapi, openapi-yaml")
     public void testGeneratorService_ResolvedSpec() throws IOException {
-
         String path = getTmpFolder().getAbsolutePath();
         GenerationRequest request = new GenerationRequest();
         request
@@ -814,6 +815,7 @@ public class GeneratorServiceTest {
         Assert.assertTrue(spec.contains("additionalProperties: true"));
 
     }
+    */
 
     @Test(description = "test generator service with typescript-angular 3.0")
     public void testGeneratorServiceTypescriptAngular3() {

@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.swagger.codegen.v3</groupId>
         <artifactId>swagger-codegen-project</artifactId>
-        <version>3.0.35-SNAPSHOT</version>
+        <version>3.0.35</version>
         <relativePath>../..</relativePath>
     </parent>
     <artifactId>swagger-generator</artifactId>
@@ -26,6 +26,7 @@
                         </goals>
                         <configuration>
                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                            <excludeArtifactIds>swagger-codegen-generators,swagger-parser,swagger-parser-core,swagger-parser-v3,swagger-parser-v2-converter</excludeArtifactIds>
                             <artifactItems>
                                 <artifactItem>
                                     <groupId>org.eclipse.jetty</groupId>
@@ -175,6 +176,7 @@
                                 </goals>
                                 <configuration>
                                     <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                                    <excludeArtifactIds>swagger-codegen-generators,swagger-parser,swagger-parser-core,swagger-parser-v3,swagger-parser-v2-converter</excludeArtifactIds>
                                     <artifactItems>
                                         <artifactItem>
                                             <groupId>org.eclipse.jetty</groupId>
